@@ -23,20 +23,22 @@
 
 <body>
     <!--Cabeçalho-->
-    <header>
+    <header id="cabecalho">
         <img src="Assets/logo_esfera_branca_final.png" alt="Logo Esfera" />
-        <h1>Gerenciador de Chamados</h1>
         
-        <!--Token-->
-        <p>
-            <i class="bi bi-key-fill"></i> Token:
-            <span>e330fa11-9815-4bb1-9949-3789a3433a1a</span>
-        </p>
+        <div id="token-container">
+            <h1>Gerenciador de Chamados</h1>
+            <!--Token-->
+            <p id="token">
+                <i class="bi bi-key-fill"></i> Token:
+                <span>e330fa11-9815-4bb1-9949-3789a3433a1a</span>
+            </p>
+        </div>
     </header>
     <!--Area Principal-->
     <main>
         <!--Area para criação de novos chamados-->
-        <div id="cria-chamado">
+        <div id="chamados-novos">
             <!--Formulário de criação de novos chamados-->
             <form action="" method="post">
                 <!--Assunto-->

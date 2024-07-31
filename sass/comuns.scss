@@ -1,0 +1,23 @@
+/*ESTILOS COMUNS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variaveis*/
+$cor-primaria: #54668e;
+$cor-secundaria: #3a4675;
+$cor-clara: #ffffff;
+$cor-escura: #000000;
+
+/*Mixins*/
+
+@mixin display($flex, $direction, $justify-content, $align-items, $gap){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap
+}

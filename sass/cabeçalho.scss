@@ -1,0 +1,39 @@
+/*CABEÇALHO*/
+
+/*Imports Necessários*/
+ @import "comuns.scss";
+
+#cabecalho{
+    background-color: $cor-primaria;
+    padding: 20px;
+
+    @include display(flex, row, center, center, 30px);
+
+    img{
+        width: 250px;
+    }
+
+    #token-container{
+        @include display(flex, column, center, center, 15px);
+        padding-left: 30px;
+        border-left:  solid 4px $cor-clara;
+
+        h1{
+            color: $cor-clara;
+            
+        }
+
+        #token{
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: $cor-clara;
+            span{
+                background-color: $cor-clara;
+                padding: 5px 8px;
+                border-radius: 15px;
+                color: $cor-escura;
+               
+            }
+        }
+    }
+}

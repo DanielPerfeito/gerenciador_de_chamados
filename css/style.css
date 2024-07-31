@@ -1,3 +1,61 @@
+@charset "UTF-8";
+/*STYLE PRINCIPAL*/
+/*Imports necessários*/
+/*CABEÇALHO*/
+/*Imports Necessários*/
+/*ESTILOS COMUNS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/*Variaveis*/
+/*Mixins*/
+#cabecalho {
+  background-color: #54668e;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#cabecalho img {
+  width: 250px;
+}
+#cabecalho #token-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-left: 30px;
+  border-left: solid 4px #ffffff;
+}
+#cabecalho #token-container h1 {
+  color: #ffffff;
+}
+#cabecalho #token-container #token {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+#cabecalho #token-container #token span {
+  background-color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 15px;
+  color: #000000;
+}
+
+/*ESTILOS COMUNS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Variaveis*/
+/*Mixins*/
 
 /*# sourceMappingURL=style.css.map */
