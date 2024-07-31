@@ -39,35 +39,53 @@
     <main>
         <!--Area para criação de novos chamados-->
         <div id="chamados-novos">
+
+            <h2>Novo Chamado <i class="bi bi-clipboard"></i></h2>
+            <span>OBS: Campos Obrigatórios (*)</span>
             <!--Formulário de criação de novos chamados-->
-            <form action="" method="post">
+            <form id="form-novos-chamados" action="" method="post">
                 <!--Assunto-->
-                <label for="assunto">Assunto</label>
-                <input id="assunto" type="text" required />
+                <div class="container-campo">
+                    <label for="assunto">Assunto<span>*</span></label>
+                    <input id="assunto" class="form-control" type="text" placeholder="Ex: Problema no servidor" required />
+                </div>
                 <!--Descrição-->
-                <label for="descricao">Descrição</label>
-                <textarea name="descricao" id="descricao" required></textarea>
+                <div class="container-campo">
+                    <label for="descricao">Descrição<span>*</span></label>
+                    <textarea name="descricao" id="descricao" class="form-control" placeholder="Ex: O servidor está inoperante desde ontem." required></textarea>
+                </div>
                 <!--Local-->
-                <label for="local">Local</label>
-                <input id="local" type="text" required />
+                <div class="container-campo">
+                    <label for="local">Local<span>*</span></label>
+                    <input id="local" class="form-control" type="text" placeholder="Ex: Sala de Servidores" required />
+                </div>
                 <!--Prioridade-->
-                <label for="prioridade">Prioridade</label>
-                <select name="prioridade" id="prioridade">
-                    <option value="" selected disabled>Selecione</option>
-                    <option value="baixa">Baixa</option>
-                    <option value="media">Média</option>
-                    <option value="alta">Alta</option>
-                </select>
+                <div class="container-campo">
+                    <label for="prioridade">Prioridade<span>*</span></label>
+                    <select name="prioridade" id="prioridade" class="form-control">
+                        <option value="" selected disabled>Selecione</option>
+                        <option value="baixa">Baixa</option>
+                        <option value="media">Média</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                </div>
                 <!--Upload de arquivo-->
-                <label for="arquivo">Arquivos</label>
-                <input id="arquivos" type="file" />
-                <!--Solicitante/usuário-->
-                <label for="solicitante">Email do solicitante</label>
-                <input id="solicitante" type="email" required />
-                <!--Cancelar chamado-->
-                <button id="btn-cancelar-chamado" class="btn">Cancelar</button>
-                <!--Registrar chamado-->
-                <button id="btn-criar-chamado" class="btn bg-info">Registrar</button>
+                <div class="container-campo">
+                    <label for="arquivo" >Arquivos</label>
+                    <input id="arquivos" class="form-control" type="file" />
+                </div>
+                <div class="container-campo">
+                    <!--Solicitante/usuário-->
+                    <label for="solicitante">Email do solicitante<span>*</span></label>
+                    <input id="solicitante" class="form-control" type="email" placeholder="Ex: usuario@example.com" />
+                </div>
+
+                <div class="container-botoes">
+                    <!--Cancelar chamado-->
+                    <button id="btn-cancelar-chamado" class="btn">Cancelar</button>
+                    <!--Registrar chamado-->
+                    <button id="btn-criar-chamado" class="btn"><i class="bi bi-floppy2-fill"></i> Registrar</button>
+                </div>
             </form>
         </div>
 

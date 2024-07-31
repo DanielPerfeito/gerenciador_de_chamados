@@ -1,0 +1,94 @@
+/*CHAMADOS NOVOS*/
+
+/*Imports necessários*/
+@import "comuns.scss";
+
+#chamados-novos {
+    @include display(flex, column, center, center, 0px);
+     
+     padding: 50px;
+
+     h2{
+        margin: 50px;
+        color: $cor-secundaria;
+     }
+
+    span{
+        color: red;
+        width: 600px;
+        text-align: right;
+    }
+
+    #form-novos-chamados {
+        width: 600px;
+
+        
+        
+        @include display(flex, column, center, start, 20px);
+        
+        .container-campo{
+            @include display(flex, column, center, start, 2px);
+            width: 100%;
+
+            label{
+                font-size: 1rem;
+                color: $cor-secundaria;
+                font-weight: bold;
+                span{
+                    color: red;
+                }
+            }
+
+            input, textarea{
+                width: 100%;
+                padding: 5px;
+                border-radius: 5px;
+                color: $cor-secundaria;
+
+                &::placeholder{
+                    color: $cor-placeholder;
+                }
+            }
+
+            select{
+                width: 50%;
+                border-radius: 5px;
+                padding: 5px;
+                color: $cor-primaria;
+            }
+        }
+
+        .container-botoes{
+            @include display(flex, row, center, center, 10px);
+            width: 100%;
+           margin: 30px 0;
+
+            button{
+                width: 50%;
+                font-weight: bold;
+            }
+
+            #btn-cancelar-chamado{
+                border: solid .5px $cor-placeholder;
+                color: $cor-placeholder;
+
+                &:hover{
+                    background-color: $cor-placeholder;
+                    color: $cor-clara;
+                    border: none;
+                }
+
+            }
+
+            #btn-criar-chamado{
+                background-color: $cor-primaria;
+                color: $cor-clara;
+
+                &:hover{
+                    background-color: $cor-secundaria;
+                }
+            }
+        }
+    }
+
+}

@@ -57,5 +57,101 @@
 
 /*Variaveis*/
 /*Mixins*/
+/*CHAMADOS NOVOS*/
+/*Imports necessários*/
+/*ESTILOS COMUNS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Variaveis*/
+/*Mixins*/
+#chamados-novos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  padding: 50px;
+}
+#chamados-novos h2 {
+  margin: 50px;
+  color: #3a4675;
+}
+#chamados-novos span {
+  color: red;
+  width: 600px;
+  text-align: right;
+}
+#chamados-novos #form-novos-chamados {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+#chamados-novos #form-novos-chamados .container-campo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2px;
+  width: 100%;
+}
+#chamados-novos #form-novos-chamados .container-campo label {
+  font-size: 1rem;
+  color: #3a4675;
+  font-weight: bold;
+}
+#chamados-novos #form-novos-chamados .container-campo label span {
+  color: red;
+}
+#chamados-novos #form-novos-chamados .container-campo input, #chamados-novos #form-novos-chamados .container-campo textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  color: #3a4675;
+}
+#chamados-novos #form-novos-chamados .container-campo input::placeholder, #chamados-novos #form-novos-chamados .container-campo textarea::placeholder {
+  color: rgba(84, 102, 142, 0.4431372549);
+}
+#chamados-novos #form-novos-chamados .container-campo select {
+  width: 50%;
+  border-radius: 5px;
+  padding: 5px;
+  color: #54668e;
+}
+#chamados-novos #form-novos-chamados .container-botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 30px 0;
+}
+#chamados-novos #form-novos-chamados .container-botoes button {
+  width: 50%;
+  font-weight: bold;
+}
+#chamados-novos #form-novos-chamados .container-botoes #btn-cancelar-chamado {
+  border: solid 0.5px rgba(84, 102, 142, 0.4431372549);
+  color: rgba(84, 102, 142, 0.4431372549);
+}
+#chamados-novos #form-novos-chamados .container-botoes #btn-cancelar-chamado:hover {
+  background-color: rgba(84, 102, 142, 0.4431372549);
+  color: #ffffff;
+  border: none;
+}
+#chamados-novos #form-novos-chamados .container-botoes #btn-criar-chamado {
+  background-color: #54668e;
+  color: #ffffff;
+}
+#chamados-novos #form-novos-chamados .container-botoes #btn-criar-chamado:hover {
+  background-color: #3a4675;
+}
 
 /*# sourceMappingURL=style.css.map */
