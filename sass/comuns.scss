@@ -23,10 +23,7 @@ $cor-escura: #000000;
     gap: $gap
 }
 
-/*main{
-    height: 100vh;
-    background-image: url(../Assets/backgrond-body.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}*/
+main{
+    @include display(flex, row, center, center, 15px);
+    padding: 100px 15px 15px 15px;
+}

@@ -34,8 +34,13 @@ document.getElementById('btn-criar-chamado').addEventListener('click', function(
     btnVisualizar.innerHTML = '<i class="bi bi-eye-fill"></i> Visualizar';
     btnVisualizar.className = 'btn-visualizar';
     btnVisualizar.addEventListener('click', function() {
-        document.getElementById('detalhes-chamado').textContent = 
-            `ID: ${chamadoId}\nAssunto: ${assunto}\nDescrição: ${descricao}\nLocal: ${local}\nPrioridade: ${prioridade}\nSolicitante: ${solicitante}`;
+        document.getElementById('detalhes-chamado').innerHTML = 
+        `<p class="p-2"><strong>ID:</strong> ${chamadoId}</p>
+         <p class="p-2"><strong>Assunto:</strong> ${assunto}</p>
+         <p class="p-2"><strong>Descrição:</strong> ${descricao}</p>
+         <p class="p-2"><strong>Local:</strong> ${local}</p>
+         <p class="p-2"><strong>Prioridade:</strong> ${prioridade}</p>
+         <p class="p-2"><strong>Solicitante:</strong> ${solicitante}</p>`;
         document.getElementById('modal-visualizar').style.display = 'block';
     });
 

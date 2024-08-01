@@ -3,3 +3,14 @@
 /*Imports necessários*/
 @import "comuns.scss";
 
+#modal-visualizar{
+    padding: 30px;
+    background-color: aqua;
+
+    .modal-content{
+        background-color: aqua;
+        h2{
+            padding: 50px;
+        }
+    }
+}

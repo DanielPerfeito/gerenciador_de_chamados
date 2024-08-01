@@ -5,17 +5,22 @@
 
 #chamados-novos {
     @include display(flex, column, center, center, 0px);
-     padding: 50px;
+     background-image: url(/Assets/backgrond-body.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+
     
     #form-novos-chamados {
-        width: 600px;
+       width: 500px;
        background-color: $cor-clara;
-       padding: 30px;
+       padding: 15px;
        border-radius: 15px;
         
-        @include display(flex, column, center, start, 20px);
+        @include display(flex, column, center, start, 10px);
 
         h2{
+            font-size: 1.5rem;
             width: 100%;
             text-align: center;
             color: $cor-secundaria;
@@ -32,17 +37,17 @@
             width: 100%;
 
             label{
-                font-size: 1rem;
                 color: $cor-secundaria;
                 font-weight: bold;
                 span{
+                    font-size: .8rem;
                     color: red;
                 }
             }
 
             input, textarea{
                 width: 100%;
-                padding: 5px;
+                padding: 0 0 0 5px;
                 border-radius: 5px;
                 color: $cor-secundaria;
 
@@ -62,7 +67,7 @@
         .container-botoes{
             @include display(flex, row, center, center, 10px);
             width: 100%;
-           margin: 30px 0;
+        
 
             button{
                 width: 50%;

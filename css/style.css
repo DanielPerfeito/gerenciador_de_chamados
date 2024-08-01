@@ -12,16 +12,21 @@
 
 /*Variaveis*/
 /*Mixins*/
-/*main{
-    height: 100vh;
-    background-image: url(../Assets/backgrond-body.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}*/
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 100px 15px 15px 15px;
+}
+
 #cabecalho {
+  width: 100%;
   background-color: #54668e;
-  padding: 20px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -29,29 +34,25 @@
   gap: 30px;
 }
 #cabecalho img {
-  width: 250px;
+  width: 200px;
+  border-right: solid 3px #ffffff;
+  padding-right: 30px;
 }
-#cabecalho #token-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  padding-left: 30px;
-  border-left: solid 4px #ffffff;
-}
-#cabecalho #token-container h1 {
+#cabecalho h1 {
   color: #ffffff;
+  font-size: 2rem;
+  margin: 0;
 }
-#cabecalho #token-container #token {
-  font-size: 1.1rem;
+#cabecalho #token {
+  font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
+  margin: 0;
 }
-#cabecalho #token-container #token span {
+#cabecalho #token span {
   background-color: #ffffff;
-  padding: 5px 8px;
-  border-radius: 15px;
+  padding: 2px 5px;
+  border-radius: 5px;
   color: #000000;
 }
 
@@ -64,13 +65,15 @@
 
 /*Variaveis*/
 /*Mixins*/
-/*main{
-    height: 100vh;
-    background-image: url(../Assets/backgrond-body.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}*/
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 100px 15px 15px 15px;
+}
+
 /*CHAMADOS NOVOS*/
 /*Imports necessários*/
 /*ESTILOS COMUNS*/
@@ -82,33 +85,39 @@
 
 /*Variaveis*/
 /*Mixins*/
-/*main{
-    height: 100vh;
-    background-image: url(../Assets/backgrond-body.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}*/
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 100px 15px 15px 15px;
+}
+
 #chamados-novos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0px;
-  padding: 50px;
+  background-image: url(/Assets/backgrond-body.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 #chamados-novos #form-novos-chamados {
-  width: 600px;
+  width: 500px;
   background-color: #ffffff;
-  padding: 30px;
+  padding: 15px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  gap: 20px;
+  gap: 10px;
 }
 #chamados-novos #form-novos-chamados h2 {
+  font-size: 1.5rem;
   width: 100%;
   text-align: center;
   color: #3a4675;
@@ -127,16 +136,16 @@
   width: 100%;
 }
 #chamados-novos #form-novos-chamados .container-campo label {
-  font-size: 1rem;
   color: #3a4675;
   font-weight: bold;
 }
 #chamados-novos #form-novos-chamados .container-campo label span {
+  font-size: 0.8rem;
   color: red;
 }
 #chamados-novos #form-novos-chamados .container-campo input, #chamados-novos #form-novos-chamados .container-campo textarea {
   width: 100%;
-  padding: 5px;
+  padding: 0 0 0 5px;
   border-radius: 5px;
   color: #3a4675;
 }
@@ -156,7 +165,6 @@
   align-items: center;
   gap: 10px;
   width: 100%;
-  margin: 30px 0;
 }
 #chamados-novos #form-novos-chamados .container-botoes button {
   width: 50%;
@@ -187,6 +195,8 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  height: 80vh;
+  background-color: #007bff;
 }
 #chamados-existentes h2 {
   margin-bottom: 15px;

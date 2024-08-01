@@ -1,39 +1,42 @@
 /*CABEÇALHO*/
 
 /*Imports Necessários*/
- @import "comuns.scss";
+@import "comuns.scss";
 
-#cabecalho{
+#cabecalho {
+    width: 100%;
     background-color: $cor-primaria;
-    padding: 20px;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
 
     @include display(flex, row, center, center, 30px);
 
-    img{
-        width: 250px;
+    img {
+        width: 200px;
+        border-right: solid 3px $cor-clara;
+        padding-right: 30px;
+       
     }
 
-    #token-container{
-        @include display(flex, column, center, center, 15px);
-        padding-left: 30px;
-        border-left:  solid 4px $cor-clara;
+    h1 {
+        color: $cor-clara;
+        font-size: 2rem;
+        margin: 0;
+    }
 
-        h1{
-            color: $cor-clara;
-            
-        }
+    #token {
+        font-size: 1rem;
+        font-weight: bold;
+        color: $cor-clara;
+        margin: 0;
 
-        #token{
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: $cor-clara;
-            span{
-                background-color: $cor-clara;
-                padding: 5px 8px;
-                border-radius: 15px;
-                color: $cor-escura;
-               
-            }
+        span {
+            background-color: $cor-clara;
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: $cor-escura;
         }
     }
+
 }
