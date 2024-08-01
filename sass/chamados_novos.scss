@@ -5,26 +5,27 @@
 
 #chamados-novos {
     @include display(flex, column, center, center, 0px);
-     
      padding: 50px;
-
-     h2{
-        margin: 50px;
-        color: $cor-secundaria;
-     }
-
-    span{
-        color: red;
-        width: 600px;
-        text-align: right;
-    }
-
+    
     #form-novos-chamados {
         width: 600px;
-
-        
+       background-color: $cor-clara;
+       padding: 30px;
+       border-radius: 15px;
         
         @include display(flex, column, center, start, 20px);
+
+        h2{
+            width: 100%;
+            text-align: center;
+            color: $cor-secundaria;
+         }
+    
+        span{
+            color: red;
+            width: 100%;
+            text-align: right;
+        }
         
         .container-campo{
             @include display(flex, column, center, start, 2px);
@@ -77,7 +78,6 @@
                     color: $cor-clara;
                     border: none;
                 }
-
             }
 
             #btn-criar-chamado{
@@ -90,5 +90,4 @@
             }
         }
     }
-
 }

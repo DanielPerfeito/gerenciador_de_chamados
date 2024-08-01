@@ -1,0 +1,49 @@
+/* Estilo geral para o contêiner de chamados existentes */
+/* Estilo geral para o contêiner de chamados existentes */
+#chamados-existentes {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    
+    h2 {
+      margin-bottom: 15px;
+      font-size: 1.5em;
+      color: #333;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      
+      th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+      
+      th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+      }
+      
+      td {
+        button {
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          border-radius: 3px;
+          padding: 5px 10px;
+          cursor: pointer;
+          font-size: 0.9em;
+          margin-right: 5px;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+    }
+  }
+  

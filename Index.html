@@ -17,6 +17,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
         defer></script>
 
+        <script src="js/script.js" defer></script>
+
     <!--Links Css-->
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -40,10 +42,11 @@
         <!--Area para criação de novos chamados-->
         <div id="chamados-novos">
 
-            <h2>Novo Chamado <i class="bi bi-clipboard"></i></h2>
-            <span>OBS: Campos Obrigatórios (*)</span>
             <!--Formulário de criação de novos chamados-->
             <form id="form-novos-chamados" action="" method="post">
+
+                <h2>Novo Chamado <i class="bi bi-clipboard"></i></h2>
+            <span>OBS: Campos Obrigatórios (*)</span>
                 <!--Assunto-->
                 <div class="container-campo">
                     <label for="assunto">Assunto<span>*</span></label>
@@ -91,8 +94,29 @@
 
         <div id="chamados-existentes" class="">
             <h2>Chamados Existentes</h2>
-
-            <ul id="lista-chamados"></ul>
+            <table id="tabela-chamados">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Assunto</th>
+                        <th>Prioridade</th>
+                        <th>Solicitante</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-chamados-body">
+                    <!-- Linhas de chamados serão inseridas dinamicamente aqui -->
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Modal para visualização do chamado completo -->
+        <div id="modal-visualizar" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Detalhes do Chamado</h2>
+                <p id="detalhes-chamado"></p>
+            </div>
         </div>
     </main>
 </body>

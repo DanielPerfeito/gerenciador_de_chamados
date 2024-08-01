@@ -12,6 +12,13 @@
 
 /*Variaveis*/
 /*Mixins*/
+/*main{
+    height: 100vh;
+    background-image: url(../Assets/backgrond-body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}*/
 #cabecalho {
   background-color: #54668e;
   padding: 20px;
@@ -57,6 +64,13 @@
 
 /*Variaveis*/
 /*Mixins*/
+/*main{
+    height: 100vh;
+    background-image: url(../Assets/backgrond-body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}*/
 /*CHAMADOS NOVOS*/
 /*Imports necessários*/
 /*ESTILOS COMUNS*/
@@ -68,6 +82,13 @@
 
 /*Variaveis*/
 /*Mixins*/
+/*main{
+    height: 100vh;
+    background-image: url(../Assets/backgrond-body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}*/
 #chamados-novos {
   display: flex;
   flex-direction: column;
@@ -76,22 +97,26 @@
   gap: 0px;
   padding: 50px;
 }
-#chamados-novos h2 {
-  margin: 50px;
-  color: #3a4675;
-}
-#chamados-novos span {
-  color: red;
-  width: 600px;
-  text-align: right;
-}
 #chamados-novos #form-novos-chamados {
   width: 600px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   gap: 20px;
+}
+#chamados-novos #form-novos-chamados h2 {
+  width: 100%;
+  text-align: center;
+  color: #3a4675;
+}
+#chamados-novos #form-novos-chamados span {
+  color: red;
+  width: 100%;
+  text-align: right;
 }
 #chamados-novos #form-novos-chamados .container-campo {
   display: flex;
@@ -152,6 +177,47 @@
 }
 #chamados-novos #form-novos-chamados .container-botoes #btn-criar-chamado:hover {
   background-color: #3a4675;
+}
+
+/* Estilo geral para o contêiner de chamados existentes */
+/* Estilo geral para o contêiner de chamados existentes */
+#chamados-existentes {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+#chamados-existentes h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #333;
+}
+#chamados-existentes table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#chamados-existentes table th, #chamados-existentes table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+#chamados-existentes table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+#chamados-existentes table td button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-right: 5px;
+}
+#chamados-existentes table td button:hover {
+  background-color: #0056b3;
 }
 
 /*# sourceMappingURL=style.css.map */
